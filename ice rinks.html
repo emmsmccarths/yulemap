@@ -2,42 +2,43 @@
 <html>
 <head>
   <title>Yule Map</title>
-  <link rel="stylesheet" type="text/css" href="css/yulemap.css">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel='stylesheet' type='text/css' href='yulemap.css'>
+  <meta name='viewport' content='width=device-width,initial-scale=1.0'>
 </head>
 <body>
   <div class='jumbotron'>
-    <div class="container">
+    <div class='container-fluid'>
       <h1>Ice Rinks</h1>
-      <div
-      id="nhmskating_map" class='text-center'>
-    </div>
-    <div>
       <h2>The Natural History Museum</h2>
       <p class = "station">Line: <span style="color: #000099; font-weight: bold">Piccadilly (also Circle and District) </span> <br /> Station: <b>South Kensington</b></p>
       <p class = "walk_time">Distance from tube: 5 minute walk</p>
       <p class = "linkout"><a href="http://www.nhm.ac.uk/visit/exhibitions/ice-rink.html" target="_blank">Ice Skating at the Natural History Museum</a>
         <img class = "image" src="http://www.nhm.ac.uk/content/nhmwww/en/home/visit/exhibitions/ice-rink/jcr:content/par/rowfullwidth/par2/headertextimage.img.full.high.jpg/1533306926108.jpg" alt="Picture of ice skating at the Natural History Museum">
-        <p class = "description">It doesn’t matter if you’re a pro or if you’ve never skated before, the backdrop of the Natural History Museum’s Waterhouse building makes the ice rink magical for everyone. Enjoy a bird’s eye view from the Café Bar as you warm up with a hot drink post-skate.</p>
-      </div>
-      <div>
-        <h2>Somerset House</h2>
-        <p class = "station">Line: <span style="color: #FFCC00; font-weight: bold">Circle (also District) </span> <br /> Station: <b>Temple</b></p>
-        <p class = "walk_time">Distance from tube: 5 minute walk</p>
-        <p class = "description">Right in the heart of London, Somerset House’s ice rink is open day and night for skating with family and friends (including two dedicated skating sessions for wheelchair users). The rink’s home to a number of “Skate Lates” music nights featuring a variety of artists and DJs, or for the kids there’s a chance to “Skate with Snoopy” in celebration of the Somerset House-run exhibition “Good Grief, Charlie Brown!”</p>
-        <p class = "linkout"><a href="https://www.somersethouse.org.uk/whats-on/skate-somerset-house" target="_blank">Skate at Somerset House</a>
-          <p class = "image"><img src="https://www.somersethouse.org.uk/sites/default/files/styles/header_image/public/Skate%20-%20Times%20and%20tickets.jpg?itok=5hZRp41p" alt="Picture of ice rink at Somerset House">
-            <p id = "somersethouse_map"></p>
-          </div>
-          <div>
-            <h2>Canary Wharf</h2>
-            <p class = "station">Line: <span style="color: #868F98; font-weight: bold">Jubilee</span> <br /> Station: <b>Canary Wharf</b></p>
-            <p class = "walk_time">Distance from tube: 2 minute walk</p>
-            <p class = "description">One of the longest-running seasonal ice rinks in London, Canary Wharf’s 1200 sq. m outdoor ice rink in Canada Square Park has an 8km grid of LED lights underneath the ice which is sure to light up your life! With a rink-side bar you can stay close to the action or visit one of the many shops, bars and restaurants surrounding the rink.</p>
-            <p class = "linkout"><a href="http://www.icerinkcanarywharf.co.uk/" target="_blank">Ice Skating at Canary Wharf</a>
-              <p class = "image"><img src="http://assets.londonist.com/uploads/2015/11/ice_skating.jpg" alt="Canary Wharf Ice Rink">
-                <p id = "canarywharfskating_map"></p>
+        <div class='row'>
+          <div class='col-sm-4'>
+            <p class = "description">It doesn’t matter if you’re a pro or if you’ve never skated before, the backdrop of the Natural History Museum’s Waterhouse building makes the ice rink magical for everyone. Enjoy a bird’s eye view from the Café Bar as you warm up with a hot drink post-skate.</p>
+            <p id="nhmskating_map" class='text-center' /p>
+            </div>
+            <div>
+              <h2>Somerset House</h2>
+              <p class = "station">Line: <span style="color: #FFCC00; font-weight: bold"> Circle (also District) </span> <br /> Station: <b>Temple</b></p>
+              <p class = "walk_time">Distance from tube: 5 minute walk</p>
+              <p class = "description">Right in the heart of London, Somerset House’s ice rink is open day and night for skating with family and friends (including two dedicated skating sessions for wheelchair users). The rink’s home to a number of “Skate Lates” music nights featuring a variety of artists and DJs, or for the kids there’s a chance to “Skate with Snoopy” in celebration of the Somerset House-run exhibition “Good Grief, Charlie Brown!”</p>
+              <p class = "linkout"><a href="https://www.somersethouse.org.uk/whats-on/skate-somerset-house" target="_blank">Skate at Somerset House</a>
+                <img class = "image" src="https://www.somersethouse.org.uk/sites/default/files/styles/header_image/public/Skate%20-%20Times%20and%20tickets.jpg?itok=5hZRp41p" alt="Picture of ice rink at Somerset House">
+                <p id = "somersethouse_map"></p>
               </div>
+              <div>
+                <h2>Canary Wharf</h2>
+                <p class = "station">Line: <span style="color: #868F98; font-weight: bold">Jubilee</span> <br /> Station: <b>Canary Wharf</b></p>
+                <p class = "walk_time">Distance from tube: 2 minute walk</p>
+                <p class = "description">One of the longest-running seasonal ice rinks in London, Canary Wharf’s 1200 sq. m outdoor ice rink in Canada Square Park has an 8km grid of LED lights underneath the ice which is sure to light up your life! With a rink-side bar you can stay close to the action or visit one of the many shops, bars and restaurants surrounding the rink.</p>
+                <p class = "linkout"><a href="http://www.icerinkcanarywharf.co.uk/" target="_blank">Ice Skating at Canary Wharf</a>
+                  <img class = "image" src="http://assets.londonist.com/uploads/2015/11/ice_skating.jpg" alt="Canary Wharf Ice Rink">
+                  <p id = "canarywharfskating_map"></p>
+                </div>
+              </div>
+
               <script>
               function initMap() {
                 var Nhm = {lat:51.496889, lng:-0.176292}

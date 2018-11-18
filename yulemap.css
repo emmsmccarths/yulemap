@@ -1,7 +1,13 @@
+body {
+  background-color:#ccddff;
+}
+
 h1 {
-    color:rgba(76, 76, 76, 0);
-    font-family: "Tahoma", sans-serif;
-    font-size: 10px;
+    color: ##00264d;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+    text-align: center;
 }
 h2 {
   color:rgba(0, 0, 0, 1);
@@ -10,6 +16,14 @@ h2 {
   font-weight: 150;
   margin: 0;
 }
+
+p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 150;
+  margin: 0;
+}
+
 img {
   .responsive {
       max-width: 100%;
@@ -20,7 +34,7 @@ img {
       object-fit: cover;
       padding: 0 20px 0 0;
       }
-  
+
   height: 285px;
   width: 300px;
 
