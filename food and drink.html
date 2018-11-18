@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yule Map</title>
+      <link rel="stylesheet" type="text/css" href="css/yulemap.css">
+  </head>
+  <body>
+    <h1>Food and Drink</h1>
+    <div>
+      <h2>Coppa Club Igloos</h2>
+      <p class = "station">Line: <span style="color: #FFD700; font-weight: bold">Circle Line</span> <br /> Station: <b>Tower Hill</b></p>
+      <p class = "walk_time">Distance from tube: 4 minute walk</p>
+      <p class = "description">For Christmas, the terrace at Coppa Club is transformed into a winter dining experience. Instead of booking a table, you can hire an igloo and dine whilst enjoying unrivalled views of London's Thameside skyline. As well as winter dining classics, for 2018 Coppa Club have collaborated with Sipsmith gins to bring you a festive cocktail menu.</p>
+      <p class = "linkout"><a href="https://www.coppaclub.co.uk/towerbridge/" target="_blank">Bookings</a>
+      <p class = "image"><img src="https://lepetitjournal.com/sites/default/files/styles/main_article/public/igloos%25202.jpg?itok=8AE1faii" alt="Picture of Coppa Club igloos">
+      <p id = "coppaclub_map"></p>
+    </div>
+    <div>
+      <h2>Dalloway Terrace</h2>
+      <p class = "station">Line: <span style="color: #FF0000; font-weight: bold">Central Line</span> <br /> Station: <b>Tottenham Court Road</b></p>
+      <p class = "walk_time">Distance from tube: 3 minute walk</p>
+      <p class = "description">Dalloway Terrace is an outdoor, terraced restaurant in the heart of Bloomsbury. The terrace has been transformed into a winter hideaway. With the decor arranged by master florist Nikki Tibbles, Dalloway Terrace is a unique place to grab brunch or have afternoon tea over the festive period.</p>      <p class = "linkout"><a href="https://dallowayterrace.com/" target="_blank">Bookings</a>
+      <p class = "image"><img src="https://palife.co.uk/wp-content/uploads/2016/12/Christmas-Shoot_Dalloway-Terrace_Header-Cropped1.jpg" alt="Picture of Dalloway Terrace">
+      <p id = "dalloway_map"></p>
+    </div>
+    <div>
+      <h2>Roof East</h2>
+      <p class = "station">Line: <span style="color: #FF0000; font-weight: bold">Central Line</span> <br /> Station: <b>Stratford</b></p>
+      <p class = "walk_time">Distance from tube: 4 minute walk</p>
+      <p class = "description">The Roof East popup venue is back with an 80's throwback alpine sports theme. You'll be able to try your hand at curling at Sliders; the 6 lane, rooftop curling experience. Lane side hosts can serve you cocktails or mulled wine from the neon-hit Ski Lodge Bar keep the competitive spirit going.</p>
+      <p class = "linkout"><a href="http://www.roofeast.com/" target="_blank">Bookings</a>
+      <p class = "image"><img src="https://captaincharley.net/wp-content/uploads/2017/11/22-Roof-East-Winter-Ski-Bar-Sliders-Curling-London-Blog-Blogger-800x600.jpg" alt="Picture of Roof East">
+      <p id = "roofeast_map"></p>
+    </div>
+    <script>
+      function initMap() {
+        var Coppa_Club = {lat:51.508181, lng:-0.079595}
+        var Dalloway = {lat:51.517279, lng:-0.129133}
+        var Roof_East = {lat:51.541604, lng:-0.001302}
+        var map = new google.maps.Map(
+          document.getElementByID('coppaclub_map'), zoom: 4, center: Coppa_Club, map: map});
+        var map = new google.maps.Map(
+          document.getElementByID('dalloway_map'), zoom: 4, center: Dalloway, map: map});
+        var map = new google.maps.Map(
+          document.getElementByID('roofeast_map'), zoom: 4, center: Roof_East, map: map});
+      }
+    </script>
+    <script async defer
+    src= "https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+  </body>
+</html>
