@@ -35,6 +35,54 @@ h2 {
   height: 300px;
   border-radius: 3px;
 }
+.image-nathist {
+  background-image: url("http://www.nhm.ac.uk/content/nhmwww/en/home/visit/exhibitions/ice-rink/jcr:content/par/rowfullwidth/par2/headertextimage.img.full.high.jpg/1533306926108.jpg");
+  background-size: cover;
+  height: 300px;
+  border-radius: 3px;
+}
+.image-somerset {
+  background-image: url("https://www.somersethouse.org.uk/sites/default/files/styles/header_image/public/Skate%20-%20Times%20and%20tickets.jpg?itok=5hZRp41p");
+  background-size: cover;
+  height: 300px;
+  border-radius: 3px;
+}
+.image-canary {
+  background-image: url("http://assets.londonist.com/uploads/2015/11/ice_skating.jpg");
+  background-size: cover;
+  height: 300px;
+  border-radius: 3px;
+}
+.image-southbank {
+  background-image: url("https://d33hx0a45ryfj1.cloudfront.net/additional/Dynamic/media/45ea96ca3ef12863?w=1220&h=628&crop=1");
+  background-size: cover;
+  height: 300px;
+  border-radius: 3px;
+}
+.image-hyde {
+    background-image: url("https://8etif2vfcqu2w72qu3qz71w1-wpengine.netdna-ssl.com/wp-content/uploads/2017/12/WINTERWONDERLAND-2017-MAXMIECHOWSKI-1-1-500x450.jpg");
+    background-size: cover;
+    height: 300px;
+    border-radius: 3px;
+}
+.image-winterville {
+  background-image: url("https://media.timeout.com/images/104673198/630/472/image.jpg");
+  background-size: cover;
+  height: 300px;
+  border-radius: 3px;
+}
+.image-covent {
+  background-image: url("https://www.coventgarden.london/sites/default/d8files/styles/main_image_large/public/cg_images/covent-garden-christmas-1.jpg?itok=lEeDOdDx&h=17246cd0");
+  background-size: cover;
+  height: 300px;
+  border-radius: 3px;
+}
+.image-oxford {
+  background-image: url("http://cdn.ltstatic.com/2009/November/GR043182_942long.jpg");
+  background-size: cover;
+  height: 300px;
+  border-radius: 3px;
+}
 .station {
   color:rgba(120, 120, 120, 1);
   font-family: "Helvetica Neue", sans-serif;
@@ -78,14 +126,38 @@ ul {
   background-color: silver;
   border-color: silver;
 }
+.btn-info:hover {
+  background-color: grey;
+  border-color: grey;
+}
 .btn-dark {
   background-color: black;
   border-color: black;
   color: white;
 }
+.btn-dark:hover {
+  background-color: rgba(40,40,40,1);
+  border-color: rgba(40,40,40,1);
+  color: white;
+}
 .btn-light {
-  background-color: brown;
-  border-color: brown;
+  background-color: chocolate;
+  border-color: chocolate;
+  color: white;
+}
+.btn-light:hover {
+  background-color: tan;
+  border-color: tan;
+  color: white;
+}
+.btn-victoria {
+  background-color: rgba(107, 185, 240, 1);
+  border-color: rgba(107, 185, 240, 1);
+  color: white;
+}
+.btn-victoria:hover {
+  background-color: rgba(89, 171, 227, 1);
+  border-color: rgba(89, 171, 227, 1);
   color: white;
 }
 .navbar {
